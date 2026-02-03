@@ -1,0 +1,9 @@
+role: client
+log: info
+transport:
+  type: kcp
+  kcp:
+    seed: "917e77b2adbe80d72a20f71caba4d87d70cd74485f5bd20947726ec801803ea3"
+remote: "46.4.162.52:443"
+socks: "127.0.0.1:1080"
+mtu: 1350
