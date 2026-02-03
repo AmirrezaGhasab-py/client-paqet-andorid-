@@ -1,9 +1,20 @@
-role: client
-log: info
+role: "client"
+
+log:
+  level: "info"
+
+socks5:
+  - listen: "127.0.0.1:1080"
+
+server:
+  addr: "46.4.162.52:443"
+
 transport:
-  type: kcp
+  protocol: "kcp"
+  conn: 1
   kcp:
-    seed: "917e77b2adbe80d72a20f71caba4d87d70cd74485f5bd20947726ec801803ea3"
-remote: "46.4.162.52:443"
-socks: "127.0.0.1:1080"
-mtu: 1350
+    mode: "fast"
+    key: "917e77b2adbe80d72a20f71caba4d87d70cd74485f5bd20947726ec801803ea3"
+    mtu: 1350
+    rcvwnd: 512
+    sndwnd: 512
