@@ -18,3 +18,10 @@ transport:
     mtu: 1350
     rcvwnd: 512
     sndwnd: 512
+
+# این بخش رو اضافه کردیم تا ارور برطرف بشه:
+network:
+  interface: "wlan0"  # اسم کارت شبکه وای‌فای در اندروید
+  ipv4:
+    addr: "0.0.0.0:0"
+    router_mac: "ff:ff:ff:ff:ff:ff"
